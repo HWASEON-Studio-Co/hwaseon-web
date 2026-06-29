@@ -40,7 +40,6 @@
   .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
   a { color: inherit; text-decoration: none; }
 
-  /* ambient glow */
   .glow {
     position: fixed; inset: 0; z-index: 0; pointer-events: none;
     background:
@@ -49,7 +48,6 @@
   }
   .content { position: relative; z-index: 1; }
 
-  /* nav */
   nav {
     position: sticky; top: 0; z-index: 10;
     backdrop-filter: blur(14px);
@@ -63,11 +61,22 @@
     background: linear-gradient(135deg, var(--lavender), var(--gold));
     display: grid; place-items: center; font-size: 16px; font-weight: 900; color: #1a1820;
   }
+  .nav-right { display: flex; align-items: center; gap: 28px; }
   .nav-links { display: flex; gap: 28px; font-size: 14px; color: var(--muted); }
   .nav-links a:hover { color: var(--text); }
-  @media (max-width: 640px) { .nav-links { display: none; } }
+  @media (max-width: 680px) { .nav-links { display: none; } }
 
-  /* hero */
+  /* lang toggle */
+  .lang-toggle {
+    display: inline-flex; border: 1px solid var(--divider); border-radius: 999px; overflow: hidden;
+    font-size: 13px; font-weight: 600;
+  }
+  .lang-toggle button {
+    background: transparent; border: none; color: var(--muted); cursor: pointer;
+    padding: 7px 14px; font-family: inherit; font-weight: 600; transition: all .15s ease;
+  }
+  .lang-toggle button.active { background: var(--lavender); color: #fff; }
+
   header.hero { padding: 96px 0 72px; text-align: center; }
   .eyebrow {
     display: inline-block; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase;
@@ -82,7 +91,7 @@
     background: linear-gradient(120deg, var(--lavender), var(--gold));
     -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
   }
-  .hero p.lead { font-size: clamp(16px, 2.4vw, 20px); color: var(--muted); max-width: 560px; margin: 0 auto 36px; }
+  .hero p.lead { font-size: clamp(16px, 2.4vw, 20px); color: var(--muted); max-width: 580px; margin: 0 auto 36px; }
   .cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
   .btn {
     display: inline-flex; align-items: center; gap: 8px;
@@ -94,24 +103,20 @@
   .btn-ghost { border: 1px solid var(--divider); color: var(--text); }
   .btn-ghost:hover { border-color: var(--lavender); }
 
-  /* ohaeng strip */
   .ohaeng { display: flex; gap: 14px; justify-content: center; margin-top: 56px; flex-wrap: wrap; }
   .el {
     width: 58px; height: 58px; border-radius: 16px; display: grid; place-items: center;
-    font-size: 22px; font-weight: 700; border: 1px solid var(--divider);
-    background: var(--card);
+    font-size: 22px; font-weight: 700; border: 1px solid var(--divider); background: var(--card);
   }
   .el.wood { color: var(--wood); } .el.fire { color: var(--fire); }
   .el.earth { color: var(--earth); } .el.metal { color: var(--metal); }
   .el.water { color: var(--water); }
 
-  /* sections */
   section { padding: 80px 0; }
   .sec-label { font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--lavender); font-weight: 600; margin-bottom: 14px; }
   .sec-title { font-size: clamp(28px, 5vw, 44px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 18px; }
-  .sec-sub { color: var(--muted); max-width: 600px; font-size: 17px; }
+  .sec-sub { color: var(--muted); max-width: 620px; font-size: 17px; }
 
-  /* about cards */
   .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 44px; }
   @media (max-width: 760px) { .grid3 { grid-template-columns: 1fr; } }
   .card {
@@ -123,7 +128,6 @@
   .card h3 { font-size: 19px; font-weight: 700; margin-bottom: 8px; }
   .card p { color: var(--muted); font-size: 15px; }
 
-  /* app showcase */
   .app {
     background: linear-gradient(160deg, var(--surface), var(--canvas));
     border: 1px solid var(--divider); border-radius: 28px;
@@ -138,7 +142,6 @@
   .feat li b { color: var(--text); font-weight: 700; }
   .feat .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--lavender); margin-top: 9px; flex-shrink: 0; }
 
-  /* phone mock */
   .phone {
     width: 240px; margin: 0 auto; aspect-ratio: 9/19;
     background: var(--canvas); border: 8px solid #2A2632; border-radius: 34px;
@@ -153,12 +156,10 @@
   .phone .pill.on { border-color: var(--lavender); background: rgba(123,111,207,0.15); }
   .phone .ph-btn { margin-top: auto; height: 46px; border-radius: 12px; background: var(--lavender); display: grid; place-items: center; font-weight: 800; font-size: 13px; color: #fff; }
 
-  /* CTA band */
   .band { text-align: center; padding: 90px 0; }
   .band h2 { font-size: clamp(28px, 5vw, 46px); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 16px; }
   .band p { color: var(--muted); font-size: 18px; margin-bottom: 30px; }
 
-  /* footer */
   footer { border-top: 1px solid var(--divider); padding: 44px 0; }
   footer .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
   footer .muted { color: var(--muted); font-size: 14px; }
@@ -173,10 +174,16 @@
   <nav>
     <div class="wrap">
       <div class="brand"><span class="mark">花</span> HWASEON STUDIO</div>
-      <div class="nav-links">
-        <a href="#about">소개</a>
-        <a href="#app">인연 앱</a>
-        <a href="#contact">연락처</a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#about" data-ko="소개" data-en="About">소개</a>
+          <a href="#app" data-ko="인연 앱" data-en="Inyeon">인연 앱</a>
+          <a href="#contact" data-ko="연락처" data-en="Contact">연락처</a>
+        </div>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button id="btn-ko" onclick="setLang('ko')">KO</button>
+          <button id="btn-en" onclick="setLang('en')">EN</button>
+        </div>
       </div>
     </div>
   </nav>
@@ -184,11 +191,14 @@
   <header class="hero">
     <div class="wrap">
       <span class="eyebrow">花仙 · Hwaseon Studio</span>
-      <h1>나와 최애의 인연을<br /><span class="accent">사주와 별자리</span>로 읽다</h1>
-      <p class="lead">화선 스튜디오는 동양의 K-사주와 서양의 별자리를 엮어, 당신과 최애 아이돌의 궁합을 풀어내는 모바일 경험을 만듭니다.</p>
+      <h1 data-ko="나와 최애의 인연을<br /><span class='accent'>사주와 별자리</span>로 읽다"
+          data-en="Reading the bond between<br />you and your bias with<br /><span class='accent'>Saju &amp; the Stars</span>"></h1>
+      <p class="lead"
+         data-ko="화선 스튜디오는 동양의 K-사주와 서양의 별자리를 엮어, 당신과 최애 아이돌의 궁합을 풀어내는 모바일 경험을 만듭니다."
+         data-en="Hwaseon Studio weaves Eastern K-Saju with Western astrology to craft a mobile experience that reveals your compatibility with your favorite idol."></p>
       <div class="cta-row">
-        <a href="#app" class="btn btn-primary">인연 앱 보기 →</a>
-        <a href="#contact" class="btn btn-ghost">함께하기</a>
+        <a href="#app" class="btn btn-primary" data-ko="인연 앱 보기 →" data-en="Explore Inyeon →"></a>
+        <a href="#contact" class="btn btn-ghost" data-ko="함께하기" data-en="Work with us"></a>
       </div>
       <div class="ohaeng">
         <div class="el wood">木</div>
@@ -203,23 +213,28 @@
   <section id="about">
     <div class="wrap">
       <div class="sec-label">About</div>
-      <h2 class="sec-title">우리는 화선 스튜디오</h2>
-      <p class="sec-sub">두 명의 공동 창업자가 시작한 작은 인디 스튜디오. 전통적인 운세를 현대적인 디자인과 기술로 다시 짓습니다.</p>
+      <h2 class="sec-title" data-ko="우리는 화선 스튜디오" data-en="We are Hwaseon Studio"></h2>
+      <p class="sec-sub"
+         data-ko="두 명의 공동 창업자가 시작한 작은 인디 스튜디오. 전통적인 운세를 현대적인 디자인과 기술로 다시 짓습니다."
+         data-en="A small indie studio founded by two co-founders. We rebuild traditional fortune-telling with modern design and technology."></p>
       <div class="grid3">
         <div class="card">
           <div class="ic">🔮</div>
-          <h3>전통을 다시 짓다</h3>
-          <p>사주명리와 오행, 별자리를 데이터로 풀어 누구나 즐겁게 읽을 수 있는 형태로 재해석합니다.</p>
+          <h3 data-ko="전통을 다시 짓다" data-en="Reimagining tradition"></h3>
+          <p data-ko="사주명리와 오행, 별자리를 데이터로 풀어 누구나 즐겁게 읽을 수 있는 형태로 재해석합니다."
+             data-en="We translate Saju, the five elements, and the zodiac into data — reinterpreted into something anyone can enjoy."></p>
         </div>
         <div class="card">
           <div class="ic">🎨</div>
-          <h3>감성적인 경험</h3>
-          <p>다크한 무드와 라벤더·골드의 포인트로, 운세를 보는 순간이 하나의 작은 의식이 되도록 디자인합니다.</p>
+          <h3 data-ko="감성적인 경험" data-en="An emotional experience"></h3>
+          <p data-ko="다크한 무드와 라벤더·골드의 포인트로, 운세를 보는 순간이 하나의 작은 의식이 되도록 디자인합니다."
+             data-en="With a dark mood and lavender-gold accents, we design each reading to feel like a small, personal ritual."></p>
         </div>
         <div class="card">
           <div class="ic">💜</div>
-          <h3>덕질을 위한 도구</h3>
-          <p>최애와 나의 궁합, 오늘의 운세까지. 팬심을 더 깊고 따뜻하게 만드는 콘텐츠를 만듭니다.</p>
+          <h3 data-ko="덕질을 위한 도구" data-en="A tool for fandom"></h3>
+          <p data-ko="최애와 나의 궁합, 오늘의 운세까지. 팬심을 더 깊고 따뜻하게 만드는 콘텐츠를 만듭니다."
+             data-en="From your compatibility with your bias to today's fortune — content that makes fandom deeper and warmer."></p>
         </div>
       </div>
     </div>
@@ -228,23 +243,34 @@
   <section id="app">
     <div class="wrap">
       <div class="sec-label">Our Product</div>
-      <h2 class="sec-title">인연 <span style="color:var(--muted);font-weight:400;font-size:0.6em">Inyeon</span></h2>
-      <p class="sec-sub">K-사주 × 별자리 × 최애 아이돌 궁합. 당신의 사주를 입력하면, 좋아하는 아이돌과의 인연을 풀어드립니다.</p>
+      <h2 class="sec-title"><span data-ko="인연" data-en="Inyeon"></span> <span style="color:var(--muted);font-weight:400;font-size:0.6em" data-ko="Inyeon" data-en="인연"></span></h2>
+      <p class="sec-sub"
+         data-ko="K-사주 × 별자리 × 최애 아이돌 궁합. 당신의 사주를 입력하면, 좋아하는 아이돌과의 인연을 풀어드립니다."
+         data-en="K-Saju × Astrology × idol compatibility. Enter your birth details and we'll read the bond between you and your favorite idol."></p>
 
       <div class="app">
         <div>
-          <h3>당신과 <span class="kr">최애</span>의<br />궁합을 한눈에</h3>
-          <p style="color:var(--muted)">생년월일과 별자리만 있으면 충분합니다. 오행의 균형과 별자리의 호환을 함께 분석해, 오늘의 인연 지수를 알려드려요.</p>
+          <h3 data-ko="당신과 <span class='kr'>최애</span>의<br />궁합을 한눈에"
+              data-en="Your bond with<br />your <span class='kr'>bias</span>, at a glance"></h3>
+          <p style="color:var(--muted)"
+             data-ko="생년월일과 별자리만 있으면 충분합니다. 오행의 균형과 별자리의 호환을 함께 분석해, 오늘의 인연 지수를 알려드려요."
+             data-en="All you need is your birth date and zodiac sign. We analyze the balance of the five elements and zodiac compatibility to show your daily bond score."></p>
           <ul class="feat">
-            <li><span class="dot"></span><span><b>K-사주 분석</b> — 사주팔자와 오행(목·화·토·금·수)의 균형을 풀이</span></li>
-            <li><span class="dot"></span><span><b>별자리 궁합</b> — 서양 점성술의 호환성을 더해 입체적으로</span></li>
-            <li><span class="dot"></span><span><b>최애 아이돌 매칭</b> — BTS, BLACKPINK 등 아이돌과의 인연 지수</span></li>
-            <li><span class="dot"></span><span><b>오늘의 운세</b> — 매일 새롭게 받아보는 나만의 데일리 리딩</span></li>
+            <li><span class="dot"></span><span data-ko="<b>K-사주 분석</b> — 사주팔자와 오행(목·화·토·금·수)의 균형을 풀이"
+                data-en="<b>K-Saju analysis</b> — interpreting your four pillars and the balance of the five elements (Wood·Fire·Earth·Metal·Water)"></span></li>
+            <li><span class="dot"></span><span data-ko="<b>별자리 궁합</b> — 서양 점성술의 호환성을 더해 입체적으로"
+                data-en="<b>Zodiac compatibility</b> — adding Western astrology for a fuller picture"></span></li>
+            <li><span class="dot"></span><span data-ko="<b>최애 아이돌 매칭</b> — BTS, BLACKPINK 등 아이돌과의 인연 지수"
+                data-en="<b>Idol matching</b> — your bond score with idols like BTS, BLACKPINK and more"></span></li>
+            <li><span class="dot"></span><span data-ko="<b>오늘의 운세</b> — 매일 새롭게 받아보는 나만의 데일리 리딩"
+                data-en="<b>Daily fortune</b> — a fresh personal reading delivered every day"></span></li>
           </ul>
           <div class="cta-row" style="justify-content:flex-start;margin-top:30px">
-            <a href="#contact" class="btn btn-primary">출시 소식 받기</a>
+            <a href="#contact" class="btn btn-primary" data-ko="출시 소식 받기" data-en="Get launch updates"></a>
           </div>
-          <p style="color:var(--muted);font-size:13px;margin-top:14px">📱 Android 먼저 출시 예정 · iOS 준비 중</p>
+          <p style="color:var(--muted);font-size:13px;margin-top:14px"
+             data-ko="📱 Android 먼저 출시 예정 · iOS 준비 중"
+             data-en="📱 Launching on Android first · iOS in the works"></p>
         </div>
         <div>
           <div class="phone">
@@ -267,8 +293,9 @@
   <section class="band" id="contact">
     <div class="wrap">
       <div class="sec-label" style="text-align:center">Get in touch</div>
-      <h2>함께 인연을 만들어요</h2>
-      <p>협업·제휴·출시 소식 문의는 언제든 환영합니다.</p>
+      <h2 data-ko="함께 인연을 만들어요" data-en="Let's create connections together"></h2>
+      <p data-ko="협업·제휴·출시 소식 문의는 언제든 환영합니다."
+         data-en="Collaborations, partnerships, and launch inquiries are always welcome."></p>
       <div class="cta-row">
         <a href="mailto:hwaseon.studio@gmail.com" class="btn btn-primary">hwaseon.studio@gmail.com</a>
       </div>
@@ -278,11 +305,31 @@
   <footer>
     <div class="wrap">
       <div class="brand"><span class="mark">花</span> HWASEON STUDIO</div>
-      <div class="muted">© 2026 화선 스튜디오 (Hwaseon Studio). All rights reserved.</div>
+      <div class="muted" data-ko="© 2026 화선 스튜디오 (Hwaseon Studio). All rights reserved."
+           data-en="© 2026 Hwaseon Studio. All rights reserved."></div>
       <a class="link" href="mailto:hwaseon.studio@gmail.com">hwaseon.studio@gmail.com</a>
     </div>
   </footer>
 
 </div>
+
+<script>
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-ko]').forEach(function (el) {
+      var val = el.getAttribute('data-' + lang);
+      if (val !== null) el.innerHTML = val;
+    });
+    document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    try { localStorage.setItem('hw-lang', lang); } catch (e) {}
+  }
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem('hw-lang'); } catch (e) {}
+    var initial = saved || ((navigator.language || 'ko').toLowerCase().startsWith('ko') ? 'ko' : 'en');
+    setLang(initial);
+  })();
+</script>
 </body>
 </html>
