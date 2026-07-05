@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inyeon Privacy Policy · 개인정보처리방침 — HWASEON Studio</title>
+<meta name="description" content="Privacy policy for the Inyeon app by HWASEON Studio.">
+<style>
+  :root{
+    --canvas:#0E0D14; --surface:#1A1820; --card:#221F2B;
+    --text:#F5F2EC; --text2:#A7A1B5; --divider:#2A2632;
+    --lavender:#7B6FCF; --gold:#FFD56B;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--canvas);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Apple SD Gothic Neo','Noto Sans KR',sans-serif;line-height:1.7}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 24px 96px}
+  header{display:flex;justify-content:space-between;align-items:center;margin-bottom:48px}
+  .logo{font-weight:700;letter-spacing:2px;color:var(--text);text-decoration:none}
+  .logo span{color:var(--lavender)}
+  .lang-toggle{display:flex;gap:4px;border:1px solid var(--divider);border-radius:99px;padding:3px}
+  .lang-toggle button{background:none;border:none;color:var(--text2);padding:6px 14px;border-radius:99px;cursor:pointer;font-size:13px}
+  .lang-toggle button.active{background:var(--lavender);color:var(--canvas);font-weight:700}
+  h1{font-size:28px;letter-spacing:1px;margin-bottom:8px}
+  .updated{color:var(--text2);font-size:13px;margin-bottom:40px}
+  h2{font-size:17px;color:var(--gold);margin:36px 0 12px;letter-spacing:.5px}
+  p,li{color:var(--text2);font-size:15px}
+  ul{padding-left:20px;margin:8px 0}
+  .card{background:var(--surface);border:1px solid var(--divider);border-radius:16px;padding:20px 24px;margin:16px 0}
+  .card strong{color:var(--text)}
+  a{color:var(--lavender)}
+  [data-lang]{display:none}
+  html[lang="ko"] [data-lang="ko"]{display:block}
+  html[lang="en"] [data-lang="en"]{display:block}
+  footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--divider);color:var(--text2);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="./index.html">HWASEON<span> STUDIO</span></a>
+    <div class="lang-toggle">
+      <button id="btn-ko" onclick="setLang('ko')">KO</button>
+      <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </header>
+
+  <div data-lang="ko">
+    <h1>인연(Inyeon) 개인정보처리방침</h1>
+    <p class="updated">시행일: 2026년 7월 5일</p>
+
+    <div class="card">
+      <p><strong>요약:</strong> 인연 앱은 회원가입이 없으며, 입력하신 모든 정보는 <strong>회원님의 기기에만 저장</strong>됩니다. 저희 서버로 전송되거나 제3자에게 제공되는 개인정보는 없습니다.</p>
+    </div>
+
+    <h2>1. 수집하는 정보</h2>
+    <p>앱 이용을 위해 다음 정보를 입력받습니다.</p>
+    <ul>
+      <li>이름(닉네임), 생년월일, 성별</li>
+      <li>선택한 아이돌(최애) 정보 및 직접 추가한 아이돌의 이름·그룹·생년월일</li>
+      <li>일일 궁합 기록(앱 사용 통계)</li>
+    </ul>
+    <p>이 정보는 사주·별자리 궁합 계산에만 사용되며, 전부 기기 내부 저장소(AsyncStorage)에 저장됩니다.</p>
+
+    <h2>2. 서버 전송 및 제3자 제공</h2>
+    <p>인연 앱은 자체 서버가 없으며, 입력된 개인정보를 외부로 전송하지 않습니다. 제3자 광고 SDK, 분석(analytics) 도구를 사용하지 않습니다.</p>
+
+    <h2>3. 정보의 삭제</h2>
+    <p>앱 내 <strong>Me 탭 → Start over</strong> 버튼으로 모든 데이터를 즉시 삭제할 수 있으며, 앱을 삭제하면 저장된 모든 정보가 함께 삭제됩니다.</p>
+
+    <h2>4. 아동의 개인정보</h2>
+    <p>본 앱은 만 13세 미만 아동을 대상으로 하지 않습니다.</p>
+
+    <h2>5. 문의</h2>
+    <p>개인정보 관련 문의: <a href="mailto:hwaseon.studio@gmail.com">hwaseon.studio@gmail.com</a></p>
+
+    <h2>6. 방침의 변경</h2>
+    <p>본 방침이 변경되는 경우 이 페이지를 통해 공지합니다.</p>
+  </div>
+
+  <div data-lang="en">
+    <h1>Inyeon Privacy Policy</h1>
+    <p class="updated">Effective date: July 5, 2026</p>
+
+    <div class="card">
+      <p><strong>Summary:</strong> Inyeon has no sign-up. Everything you enter is <strong>stored only on your device</strong>. We do not transmit your personal data to any server or share it with third parties.</p>
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <p>To use the app, you enter:</p>
+    <ul>
+      <li>Name (nickname), date of birth, gender</li>
+      <li>Your selected bias (idol), and the name/group/birth date of any custom idol you add</li>
+      <li>Daily compatibility history (app usage stats)</li>
+    </ul>
+    <p>This information is used solely to calculate Saju &amp; zodiac compatibility, and is stored entirely in your device's local storage (AsyncStorage).</p>
+
+    <h2>2. Data Transmission &amp; Third Parties</h2>
+    <p>Inyeon has no backend server and does not transmit your personal data anywhere. We use no third-party advertising SDKs or analytics tools.</p>
+
+    <h2>3. Deleting Your Data</h2>
+    <p>You can erase all data at any time via <strong>Me tab → Start over</strong>. Uninstalling the app also deletes all stored data.</p>
+
+    <h2>4. Children's Privacy</h2>
+    <p>This app is not directed to children under 13.</p>
+
+    <h2>5. Contact</h2>
+    <p>Privacy inquiries: <a href="mailto:hwaseon.studio@gmail.com">hwaseon.studio@gmail.com</a></p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>Any changes to this policy will be announced on this page.</p>
+  </div>
+
+  <footer>© 2026 HWASEON Studio · <a href="./index.html">hwaseon-web</a></footer>
+</div>
+<script>
+  function setLang(l){
+    document.documentElement.lang=l;
+    document.getElementById('btn-ko').classList.toggle('active',l==='ko');
+    document.getElementById('btn-en').classList.toggle('active',l==='en');
+    try{localStorage.setItem('hw-lang',l)}catch(e){}
+  }
+  var saved=null;
+  try{saved=localStorage.getItem('hw-lang')}catch(e){}
+  setLang(saved||((navigator.language||'').startsWith('ko')?'ko':'en'));
+</script>
+</body>
+</html>
