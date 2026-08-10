@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>내 진짜 목소리 Privacy Policy · 개인정보처리방침 — HWASEON Studio</title>
+<meta name="description" content="Privacy policy for the TrueVoice (내 진짜 목소리) app by HWASEON Studio.">
+<style>
+  :root{
+    --canvas:#0E0D14; --surface:#1A1820; --card:#221F2B;
+    --text:#F5F2EC; --text2:#A7A1B5; --divider:#2A2632;
+    --lavender:#7B6FCF; --gold:#FFD56B;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--canvas);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Apple SD Gothic Neo','Noto Sans KR',sans-serif;line-height:1.7}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 24px 96px}
+  header{display:flex;justify-content:space-between;align-items:center;margin-bottom:48px}
+  .logo{font-weight:700;letter-spacing:2px;color:var(--text);text-decoration:none}
+  .logo span{color:var(--lavender)}
+  .lang-toggle{display:flex;gap:4px;border:1px solid var(--divider);border-radius:99px;padding:3px}
+  .lang-toggle button{background:none;border:none;color:var(--text2);padding:6px 14px;border-radius:99px;cursor:pointer;font-size:13px}
+  .lang-toggle button.active{background:var(--lavender);color:var(--canvas);font-weight:700}
+  h1{font-size:28px;letter-spacing:1px;margin-bottom:8px}
+  .updated{color:var(--text2);font-size:13px;margin-bottom:40px}
+  h2{font-size:17px;color:var(--gold);margin:36px 0 12px;letter-spacing:.5px}
+  p,li{color:var(--text2);font-size:15px}
+  ul{padding-left:20px;margin:8px 0}
+  .card{background:var(--surface);border:1px solid var(--divider);border-radius:16px;padding:20px 24px;margin:16px 0}
+  .card strong{color:var(--text)}
+  a{color:var(--lavender)}
+  [data-lang]{display:none}
+  html[lang="ko"] [data-lang="ko"]{display:block}
+  html[lang="en"] [data-lang="en"]{display:block}
+  footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--divider);color:var(--text2);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="./index.html">HWASEON<span> STUDIO</span></a>
+    <div class="lang-toggle">
+      <button id="btn-ko" onclick="setLang('ko')">KO</button>
+      <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </header>
+
+  <div data-lang="ko">
+    <h1>내 진짜 목소리 개인정보처리방침</h1>
+    <p class="updated">시행일: 2026년 8월 10일</p>
+
+    <div class="card">
+      <p><strong>요약:</strong> 내 진짜 목소리 앱은 회원가입이 없습니다. <strong>목소리는 녹음되지 않으며 저장·전송되지 않습니다.</strong> 마이크 입력은 기기 안에서 실시간으로 음높이만 계산한 뒤 즉시 사라집니다. 앱 개선을 위한 <strong>익명 사용 통계</strong>만 Google Analytics for Firebase를 통해 수집됩니다.</p>
+    </div>
+
+    <h2>1. 마이크와 음성 데이터</h2>
+    <p>앱은 음역대와 말할 때의 톤을 진단하기 위해 마이크 접근 권한을 요청합니다. 음성 처리 방식은 다음과 같습니다.</p>
+    <ul>
+      <li>마이크 입력은 <strong>기기 내부에서 실시간 분석</strong>되며, 음높이(주파수) 값만 추출됩니다.</li>
+      <li>음성은 <strong>파일로 녹음되지 않습니다.</strong> 오디오 데이터는 저장되지 않고, 분석 직후 메모리에서 사라집니다.</li>
+      <li>음성 또는 음성에서 추출한 값은 <strong>외부 서버로 전송되지 않습니다.</strong> 저희는 음성 처리를 위한 서버를 운영하지 않으며, 외부 AI·음성인식 API를 사용하지 않습니다.</li>
+      <li>진단 결과는 앱을 종료하면 사라집니다. 현재 버전은 진단 기록을 기기에 저장하지 않습니다.</li>
+    </ul>
+    <p>마이크 권한은 iOS 설정 &gt; 개인정보 보호 및 보안 &gt; 마이크에서 언제든 해제할 수 있습니다.</p>
+
+    <h2>2. 수집하는 정보 (사용 통계)</h2>
+    <p>앱의 사용 현황을 파악해 기능을 개선하기 위해 Google Analytics for Firebase를 사용합니다. 이를 통해 다음이 자동으로 수집됩니다.</p>
+    <ul>
+      <li><strong>기기 식별자</strong> — 광고 식별자(IDFA)가 아닌 <strong>앱 공급업체 식별자(IDFV)</strong>. 앱을 삭제하면 초기화됩니다.</li>
+      <li><strong>사용 현황 데이터</strong> — 앱 실행·세션 시작·화면 이용 등 이용 빈도 정보</li>
+      <li><strong>기기 정보</strong> — 기기 모델, iOS 버전, 국가·언어 설정</li>
+    </ul>
+    <p>이 정보는 <strong>이름·이메일 등 회원님의 신원과 연결되지 않으며</strong>, 개인을 식별하는 데 사용되지 않습니다. 앱에는 회원가입이나 로그인 기능이 없습니다.</p>
+
+    <h2>3. 제3자 제공</h2>
+    <p>위 사용 통계는 분석 서비스 제공자인 <strong>Google LLC</strong>가 처리합니다. Google의 개인정보 처리에 대해서는 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>을 참고해 주세요. 그 외 제3자에게 정보를 제공하거나 판매하지 않습니다.</p>
+
+    <h2>4. 광고 및 추적</h2>
+    <p>본 앱은 <strong>광고를 포함하지 않습니다.</strong> 광고 SDK를 사용하지 않으며, 광고 식별자(IDFA)에 접근하지 않습니다. 다른 회사의 앱이나 웹사이트에서의 활동을 추적하지 않으므로, 앱 추적 허용(App Tracking Transparency) 요청도 하지 않습니다.</p>
+
+    <h2>5. 보관 및 삭제</h2>
+    <ul>
+      <li>음성 데이터는 저장되지 않으므로 삭제할 대상이 없습니다.</li>
+      <li>사용 통계는 Google의 데이터 보관 정책에 따라 처리되며, 보관 기간이 지나면 삭제됩니다.</li>
+      <li>앱을 삭제하면 기기 식별자가 초기화되고 이후 수집이 중단됩니다.</li>
+    </ul>
+
+    <h2>6. 아동의 개인정보</h2>
+    <p>본 앱은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+
+    <h2>7. 의학적 조언이 아님</h2>
+    <p>앱이 제공하는 진단 결과는 참고용 추정치이며 의학적 진단이나 치료 목적의 조언이 아닙니다. 음성이나 목 건강에 지속적인 이상이 있다면 이비인후과 등 전문 의료기관의 진료를 받으시기 바랍니다.</p>
+
+    <h2>8. 문의</h2>
+    <p>개인정보 관련 문의: <a href="mailto:support@hwaseonstudio.com">support@hwaseonstudio.com</a></p>
+
+    <h2>9. 방침의 변경</h2>
+    <p>본 방침이 변경되는 경우 이 페이지를 통해 공지하며, 시행일을 갱신합니다.</p>
+  </div>
+
+  <div data-lang="en">
+    <h1>TrueVoice Privacy Policy</h1>
+    <p class="updated">Effective date: August 10, 2026</p>
+
+    <div class="card">
+      <p><strong>Summary:</strong> TrueVoice has no sign-up. <strong>Your voice is never recorded, stored, or transmitted.</strong> Microphone input is analyzed on your device in real time to extract pitch only, then immediately discarded. We collect only <strong>anonymous usage statistics</strong> through Google Analytics for Firebase to improve the app.</p>
+    </div>
+
+    <h2>1. Microphone and Voice Data</h2>
+    <p>The app requests microphone access in order to measure your vocal range and speaking tone. Audio is handled as follows:</p>
+    <ul>
+      <li>Microphone input is <strong>analyzed on-device in real time</strong>, and only pitch (frequency) values are extracted.</li>
+      <li>Your voice is <strong>never recorded to a file.</strong> Audio data is not stored and leaves memory immediately after analysis.</li>
+      <li>Neither your audio nor values derived from it are <strong>transmitted to any server.</strong> We operate no backend for voice processing and use no external AI or speech-recognition APIs.</li>
+      <li>Results disappear when you close the app. This version does not save diagnosis history on your device.</li>
+    </ul>
+    <p>You can revoke microphone access at any time in iOS Settings &gt; Privacy &amp; Security &gt; Microphone.</p>
+
+    <h2>2. Information We Collect (Usage Statistics)</h2>
+    <p>We use Google Analytics for Firebase to understand how the app is used and to improve it. The following is collected automatically:</p>
+    <ul>
+      <li><strong>Device identifier</strong> — the <strong>Identifier for Vendor (IDFV)</strong>, not the advertising identifier (IDFA). It resets when you delete the app.</li>
+      <li><strong>Usage data</strong> — app launches, session starts, and screen usage frequency.</li>
+      <li><strong>Device information</strong> — device model, iOS version, country and language settings.</li>
+    </ul>
+    <p>This information is <strong>not linked to your identity</strong> (we collect no name or email) and is not used to identify you. The app has no account or login.</p>
+
+    <h2>3. Third Parties</h2>
+    <p>The usage statistics above are processed by <strong>Google LLC</strong> as our analytics provider. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> for how Google handles data. We do not otherwise share or sell your information.</p>
+
+    <h2>4. Advertising and Tracking</h2>
+    <p>This app <strong>contains no advertising.</strong> We include no ad SDKs and do not access the advertising identifier (IDFA). We do not track your activity across other companies' apps or websites, so the app does not present an App Tracking Transparency request.</p>
+
+    <h2>5. Retention and Deletion</h2>
+    <ul>
+      <li>No voice data is stored, so there is nothing to delete.</li>
+      <li>Usage statistics are handled under Google's data-retention policy and deleted when that period expires.</li>
+      <li>Deleting the app resets the device identifier and stops any further collection.</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>This app is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+
+    <h2>7. Not Medical Advice</h2>
+    <p>Results provided by the app are informational estimates, not a medical diagnosis or treatment advice. If you have persistent concerns about your voice or throat, please consult a qualified medical professional such as an ENT specialist.</p>
+
+    <h2>8. Contact</h2>
+    <p>Privacy inquiries: <a href="mailto:support@hwaseonstudio.com">support@hwaseonstudio.com</a></p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>Any changes to this policy will be announced on this page, with the effective date updated.</p>
+  </div>
+
+  <footer>© 2026 HWASEON Studio · <a href="./index.html">hwaseonstudio.com</a></footer>
+</div>
+<script>
+  function setLang(l){
+    document.documentElement.lang=l;
+    document.getElementById('btn-ko').classList.toggle('active',l==='ko');
+    document.getElementById('btn-en').classList.toggle('active',l==='en');
+    try{localStorage.setItem('hw-lang',l)}catch(e){}
+  }
+  var saved=null;
+  try{saved=localStorage.getItem('hw-lang')}catch(e){}
+  setLang(saved||((navigator.language||'').startsWith('ko')?'ko':'en'));
+</script>
+</body>
+</html>
