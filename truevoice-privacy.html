@@ -46,10 +46,10 @@
 
   <div data-lang="ko">
     <h1>내 진짜 목소리 개인정보처리방침</h1>
-    <p class="updated">시행일: 2026년 9월 11일 (최초 시행 2026년 8월 10일)</p>
+    <p class="updated">시행일: 2026년 10월 16일 (최초 시행 2026년 8월 10일)</p>
 
     <div class="card">
-      <p><strong>요약:</strong> 내 진짜 목소리 앱은 회원가입이 없습니다. <strong>목소리는 녹음되지 않으며 저장·전송되지 않습니다.</strong> 마이크 입력은 기기 안에서 실시간으로 음높이만 계산한 뒤 즉시 사라집니다. <strong>Android 버전은 어떤 정보도 수집하지 않습니다.</strong> iOS 버전은 앱 개선을 위한 <strong>익명 사용 통계</strong>만 Google Analytics for Firebase를 통해 수집합니다.</p>
+      <p><strong>요약:</strong> 내 진짜 목소리 앱은 회원가입이 없습니다. <strong>목소리는 녹음되지 않으며 저장·전송되지 않습니다.</strong> 마이크 입력은 기기 안에서 실시간으로 음높이만 계산한 뒤 즉시 사라집니다. 앱은 무료로 운영하기 위해 <strong>Google AdMob 광고</strong>를 보여줄 수 있으며, 광고가 포함된 버전에서는 광고 제공을 위해 Google이 광고 식별자 등 일부 기기 정보를 처리합니다(4항). iOS 버전은 이와 별도로 앱 개선을 위한 <strong>익명 사용 통계</strong>를 Google Analytics for Firebase로 수집합니다.</p>
     </div>
 
     <h2>1. 마이크와 음성 데이터</h2>
@@ -57,7 +57,7 @@
     <ul>
       <li>마이크 입력은 <strong>기기 내부에서 실시간 분석</strong>되며, 음높이(주파수) 값만 추출됩니다.</li>
       <li>음성은 <strong>파일로 녹음되지 않습니다.</strong> 오디오 데이터는 저장되지 않고, 분석 직후 메모리에서 사라집니다.</li>
-      <li>음성 또는 음성에서 추출한 값은 <strong>외부 서버로 전송되지 않습니다.</strong> 저희는 음성 처리를 위한 서버를 운영하지 않으며, 외부 AI·음성인식 API를 사용하지 않습니다.</li>
+      <li>음성은 <strong>외부 서버로 전송되지 않습니다.</strong> 저희는 음성 처리를 위한 서버를 운영하지 않으며, 외부 AI·음성인식 API를 사용하지 않습니다. 단, iOS 버전은 2항의 사용 통계에 측정된 음역 폭(옥타브 수) 같은 <strong>요약 수치</strong>를 포함할 수 있습니다. 음성 자체나 음높이 기록은 포함되지 않습니다.</li>
       <li>진단 결과는 앱을 종료하면 사라집니다. 현재 버전은 진단 기록을 기기에 저장하지 않습니다.</li>
     </ul>
     <p>마이크 권한은 언제든 해제할 수 있습니다. iOS는 <strong>설정 &gt; 개인정보 보호 및 보안 &gt; 마이크</strong>, Android는 <strong>설정 &gt; 애플리케이션 &gt; 내 진짜 목소리 &gt; 권한 &gt; 마이크</strong>입니다.</p>
@@ -65,27 +65,41 @@
     <h2>2. 수집하는 정보 (사용 통계)</h2>
     <p><strong>이 항목은 플랫폼에 따라 다릅니다.</strong></p>
     <div class="card">
-      <p><strong>Android 버전 — 수집하는 정보가 없습니다.</strong> 분석 도구를 포함하고 있지 않으며, 앱에 인터넷 사용 권한조차 선언되어 있지 않습니다. 따라서 아래 2·3·5항의 사용 통계 관련 내용은 Android에는 해당하지 않습니다.</p>
+      <p><strong>Android 버전 — 사용 통계를 수집하지 않습니다.</strong> 분석 도구를 포함하고 있지 않습니다. 따라서 아래 2·3·5항의 사용 통계 관련 내용은 Android에는 해당하지 않습니다. 단, 광고가 포함된 버전에서는 4항의 광고 관련 처리가 Android에도 적용됩니다.</p>
     </div>
     <p><strong>iOS 버전</strong>은 앱의 사용 현황을 파악해 기능을 개선하기 위해 Google Analytics for Firebase를 사용합니다. 이를 통해 다음이 자동으로 수집됩니다.</p>
     <ul>
       <li><strong>기기 식별자</strong> — 광고 식별자(IDFA)가 아닌 <strong>앱 공급업체 식별자(IDFV)</strong>. 앱을 삭제하면 초기화됩니다.</li>
       <li><strong>사용 현황 데이터</strong> — 앱 실행·세션 시작·화면 이용 등 이용 빈도 정보</li>
+      <li><strong>기능 이용 정보</strong> — 결과 화면에서 다시 진단하기를 눌렀는지, 결과 화면에 머문 시간, 샘플 결과 여부, 측정된 음역 폭(옥타브 수, 소수점 한 자리) 같은 요약 수치</li>
       <li><strong>기기 정보</strong> — 기기 모델, OS 버전, 국가·언어 설정</li>
     </ul>
     <p>이 정보는 <strong>이름·이메일 등 회원님의 신원과 연결되지 않으며</strong>, 개인을 식별하는 데 사용되지 않습니다. 앱에는 회원가입이나 로그인 기능이 없습니다.</p>
 
     <h2>3. 제3자 제공</h2>
-    <p>위 사용 통계(iOS 버전에 한함)는 분석 서비스 제공자인 <strong>Google LLC</strong>가 처리합니다. Google의 개인정보 처리에 대해서는 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>을 참고해 주세요. 그 외 제3자에게 정보를 제공하거나 판매하지 않습니다.</p>
+    <p>위 사용 통계(iOS 버전에 한함)는 분석 서비스 제공자인 <strong>Google LLC</strong>가, 4항의 광고 관련 정보는 광고 서비스 제공자인 <strong>Google LLC(Google AdMob)</strong>가 처리합니다. Google의 개인정보 처리에 대해서는 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>과 <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google이 파트너 앱의 정보를 사용하는 방식</a>을 참고해 주세요. 그 외 제3자에게 정보를 제공하거나 판매하지 않습니다.</p>
 
     <h2>4. 광고 및 추적</h2>
-    <p>본 앱은 <strong>광고를 포함하지 않습니다.</strong> 광고 SDK를 사용하지 않으며, 광고 식별자(IDFA)에 접근하지 않습니다. 다른 회사의 앱이나 웹사이트에서의 활동을 추적하지 않으므로, 앱 추적 허용(App Tracking Transparency) 요청도 하지 않습니다.</p>
+    <p>앱을 무료로 제공하기 위해 <strong>Google AdMob</strong>을 통해 광고를 보여줄 수 있습니다. 광고는 전면 광고 형태로 표시되며, 광고 소리는 꺼진 상태로 재생됩니다. 광고가 포함된 버전에서는 광고를 제공하고 성과를 측정하기 위해 Google이 다음 정보를 처리할 수 있습니다.</p>
+    <ul>
+      <li><strong>광고 식별자</strong> — iOS의 IDFA(아래 '추적 허용'에 동의한 경우에만), Android의 광고 ID</li>
+      <li><strong>기기 및 네트워크 정보</strong> — 기기 모델, OS 버전, 언어, IP 주소와 이를 통한 대략적인 위치(국가·도시 수준)</li>
+      <li><strong>광고 상호작용 정보</strong> — 광고 노출, 클릭 여부</li>
+      <li><strong>진단 정보</strong> — 광고 표시 오류 등 성능 관련 정보</li>
+    </ul>
+    <p>이 정보는 이름·이메일 등 회원님의 신원과 연결되지 않습니다. <strong>목소리와 진단 결과는 광고 목적으로 사용되거나 광고 서비스에 전달되지 않습니다.</strong></p>
+    <p><strong>맞춤형 광고 선택:</strong></p>
+    <ul>
+      <li><strong>iOS</strong> — 앱이 처음 광고를 준비할 때 앱 추적 허용(App Tracking Transparency) 요청이 표시됩니다. 허용하지 않으면 IDFA에 접근하지 않으며, 맞춤형이 아닌 광고가 표시됩니다. 앱의 모든 기능은 허용 여부와 관계없이 그대로 사용할 수 있습니다. 선택은 <strong>설정 &gt; 개인정보 보호 및 보안 &gt; 추적</strong>에서 언제든 바꿀 수 있습니다.</li>
+      <li><strong>Android</strong> — <strong>설정 &gt; Google &gt; 광고</strong>(기기에 따라 <strong>설정 &gt; 개인정보 보호 &gt; 광고</strong>)에서 광고 ID를 재설정하거나 삭제할 수 있습니다.</li>
+      <li><strong>유럽경제지역(EEA)·영국·스위스</strong> — 해당 지역 사용자에게는 광고 표시 전에 Google의 동의 관리 도구로 개인정보 처리 동의 여부를 묻습니다.</li>
+    </ul>
 
     <h2>5. 보관 및 삭제</h2>
     <ul>
       <li>음성 데이터는 저장되지 않으므로 삭제할 대상이 없습니다.</li>
-      <li>사용 통계는 iOS 버전에만 해당하며, Google의 데이터 보관 정책에 따라 처리되고 보관 기간이 지나면 삭제됩니다.</li>
-      <li>iOS에서 앱을 삭제하면 기기 식별자가 초기화되고 이후 수집이 중단됩니다. Android는 수집 자체가 없습니다.</li>
+      <li>사용 통계(iOS 버전에 한함)와 광고 관련 정보는 Google의 데이터 보관 정책에 따라 처리되고, 보관 기간이 지나면 삭제됩니다.</li>
+      <li>iOS에서 앱을 삭제하면 기기 식별자(IDFV)가 초기화되고 이후 수집이 중단됩니다. 광고 식별자는 위 4항의 방법으로 재설정하거나 삭제할 수 있습니다.</li>
     </ul>
 
     <h2>6. 아동의 개인정보</h2>
@@ -103,10 +117,10 @@
 
   <div data-lang="en">
     <h1>TrueVoice Privacy Policy</h1>
-    <p class="updated">Effective date: September 11, 2026 (originally August 10, 2026)</p>
+    <p class="updated">Effective date: October 16, 2026 (originally August 10, 2026)</p>
 
     <div class="card">
-      <p><strong>Summary:</strong> TrueVoice has no sign-up. <strong>Your voice is never recorded, stored, or transmitted.</strong> Microphone input is analyzed on your device in real time to extract pitch only, then immediately discarded. <strong>The Android version collects nothing at all.</strong> The iOS version collects only <strong>anonymous usage statistics</strong> through Google Analytics for Firebase to improve the app.</p>
+      <p><strong>Summary:</strong> TrueVoice has no sign-up. <strong>Your voice is never recorded, stored, or transmitted.</strong> Microphone input is analyzed on your device in real time to extract pitch only, then immediately discarded. To stay free, the app may show <strong>Google AdMob ads</strong>; in versions that include ads, Google processes some device information such as the advertising identifier to serve them (Section 4). Separately, the iOS version collects <strong>anonymous usage statistics</strong> through Google Analytics for Firebase to improve the app.</p>
     </div>
 
     <h2>1. Microphone and Voice Data</h2>
@@ -114,7 +128,7 @@
     <ul>
       <li>Microphone input is <strong>analyzed on-device in real time</strong>, and only pitch (frequency) values are extracted.</li>
       <li>Your voice is <strong>never recorded to a file.</strong> Audio data is not stored and leaves memory immediately after analysis.</li>
-      <li>Neither your audio nor values derived from it are <strong>transmitted to any server.</strong> We operate no backend for voice processing and use no external AI or speech-recognition APIs.</li>
+      <li>Your audio is <strong>never transmitted to any server.</strong> We operate no backend for voice processing and use no external AI or speech-recognition APIs. The iOS version may, however, include <strong>summary figures</strong> such as your measured range width (in octaves) in the usage statistics described in Section 2. No audio or pitch history is included.</li>
       <li>Results disappear when you close the app. This version does not save diagnosis history on your device.</li>
     </ul>
     <p>You can revoke microphone access at any time: on iOS in <strong>Settings &gt; Privacy &amp; Security &gt; Microphone</strong>, on Android in <strong>Settings &gt; Apps &gt; My Voice Coach &gt; Permissions &gt; Microphone</strong>.</p>
@@ -122,27 +136,41 @@
     <h2>2. Information We Collect (Usage Statistics)</h2>
     <p><strong>This differs by platform.</strong></p>
     <div class="card">
-      <p><strong>Android version — we collect nothing.</strong> It ships with no analytics library, and the app does not even declare internet permission. Sections 2, 3 and 5 below, insofar as they concern usage statistics, do not apply to Android.</p>
+      <p><strong>Android version — no usage statistics.</strong> It ships with no analytics library. Sections 2, 3 and 5 below, insofar as they concern usage statistics, do not apply to Android. In versions that include ads, however, the advertising practices in Section 4 apply to Android as well.</p>
     </div>
     <p>The <strong>iOS version</strong> uses Google Analytics for Firebase to understand how the app is used and to improve it. The following is collected automatically:</p>
     <ul>
       <li><strong>Device identifier</strong> — the <strong>Identifier for Vendor (IDFV)</strong>, not the advertising identifier (IDFA). It resets when you delete the app.</li>
       <li><strong>Usage data</strong> — app launches, session starts, and screen usage frequency.</li>
+      <li><strong>Feature usage</strong> — whether you tapped to retest on the results screen, time spent on that screen, whether it showed a sample result, and summary figures such as your measured range width (in octaves, to one decimal place).</li>
       <li><strong>Device information</strong> — device model, OS version, country and language settings.</li>
     </ul>
     <p>This information is <strong>not linked to your identity</strong> (we collect no name or email) and is not used to identify you. The app has no account or login.</p>
 
     <h2>3. Third Parties</h2>
-    <p>The usage statistics above (iOS version only) are processed by <strong>Google LLC</strong> as our analytics provider. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> for how Google handles data. We do not otherwise share or sell your information.</p>
+    <p>The usage statistics above (iOS version only) are processed by <strong>Google LLC</strong> as our analytics provider, and the advertising information in Section 4 is processed by <strong>Google LLC (Google AdMob)</strong> as our ad provider. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from apps that use its services</a>. We do not otherwise share or sell your information.</p>
 
     <h2>4. Advertising and Tracking</h2>
-    <p>This app <strong>contains no advertising.</strong> We include no ad SDKs and do not access the advertising identifier (IDFA). We do not track your activity across other companies' apps or websites, so the app does not present an App Tracking Transparency request.</p>
+    <p>To keep the app free, we may show ads through <strong>Google AdMob</strong>. Ads appear as full-screen interstitials and play muted. In versions that include ads, Google may process the following to serve ads and measure their performance:</p>
+    <ul>
+      <li><strong>Advertising identifier</strong> — the IDFA on iOS (only if you allow tracking, see below) and the Advertising ID on Android.</li>
+      <li><strong>Device and network information</strong> — device model, OS version, language, and IP address, with approximate location (country or city level) derived from it.</li>
+      <li><strong>Ad interaction data</strong> — ad impressions and clicks.</li>
+      <li><strong>Diagnostics</strong> — performance data such as ad loading errors.</li>
+    </ul>
+    <p>This information is not linked to your identity (we collect no name or email). <strong>Your voice and your results are never used for advertising or passed to the ad service.</strong></p>
+    <p><strong>Your choices about personalized ads:</strong></p>
+    <ul>
+      <li><strong>iOS</strong> — When the app first prepares an ad, it shows an App Tracking Transparency request. If you decline, the app does not access the IDFA and you see non-personalized ads. Every feature of the app works the same either way. You can change this at any time in <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong>.</li>
+      <li><strong>Android</strong> — You can reset or delete your Advertising ID in <strong>Settings &gt; Google &gt; Ads</strong> (on some devices, <strong>Settings &gt; Privacy &gt; Ads</strong>).</li>
+      <li><strong>EEA, UK and Switzerland</strong> — Users in these regions are asked for consent through Google's consent management tool before any ad is shown.</li>
+    </ul>
 
     <h2>5. Retention and Deletion</h2>
     <ul>
       <li>No voice data is stored, so there is nothing to delete.</li>
-      <li>Usage statistics apply to the iOS version only; they are handled under Google's data-retention policy and deleted when that period expires.</li>
-      <li>On iOS, deleting the app resets the device identifier and stops any further collection. On Android there is no collection to begin with.</li>
+      <li>Usage statistics (iOS version only) and advertising information are handled under Google's data-retention policy and deleted when that period expires.</li>
+      <li>On iOS, deleting the app resets the device identifier (IDFV) and stops any further collection. You can reset or delete the advertising identifier as described in Section 4.</li>
     </ul>
 
     <h2>6. Children's Privacy</h2>
